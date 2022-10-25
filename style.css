@@ -4,16 +4,21 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #f0f2f5;
+    min-height: 100vh;
+    background-color: #9499a2;
+    background-image:
+        radial-gradient(at 47% 33%, hsl(162.00, 77%, 40%) 0, transparent 59%),
+        radial-gradient(at 82% 65%, hsl(219.31, 66%, 43%) 0, transparent 55%);
 }
 .container{
-    width: 300px;
+    width: 350px;
     min-height: 300px;
-    margin: 50px auto;
+    margin: 30px auto;
 }
 .container h1{
     text-align: center;
-    font-size: 3rem;
+    font-size: 3.5rem;
+    color: blue;
 }
 .calculator{
     width: 100%;
@@ -26,23 +31,47 @@ body{
 }
 
 .display{
-    height: 70px;
+    min-height: 110px;
     width: 100%;
-    text-overflow: unset;
+    padding: 10px;
     text-align: end;
     font-size: 1.5rem;
-    padding: 15px;
-    
+    word-wrap: break-word;
     margin-bottom: 15px;
     border: 1px solid grey;
 }
 
-.buttons, .result{
+.display1{
+    min-height: 30px;
+}
+
+.buttons, .show-result{
     width: 22%;
-    height: 35px;
+    height: 40px;
     font-size: 1.4rem;
     margin: 5px 2px;
     border: 1px solid grey;
     border-radius: 4px;
     cursor: pointer;
+}
+.spch{
+    width: 14%;
+    background-color: rgb(62, 198, 32);
+}
+.show-result{
+    background-color: green;
+}
+
+/* Button background color designing */
+.clear{
+    background-color: rgba(200, 88, 68, 0.856);
+}
+.backspace{
+    background-color: rgba(177, 150, 62, 0.856);
+}
+.operator{
+    background-color: rgb(219, 147, 65);
+}
+.input{
+    background-color: rgb(171, 70, 187);
 }
